@@ -6,5 +6,10 @@ constructor(itemList,itemQuantity){
 }
   //Type the instance functions below this comment.
 addItem(){
-
+let q = itemQuantity.push();
+let i = itemList.push();
+}
+totalCart(){
+  let total = 0
+  
 }
