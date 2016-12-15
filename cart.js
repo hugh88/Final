@@ -1,13 +1,13 @@
 class Cart{
   //What is the first part of every class? Type it below.
-constructor(itemList,itemQuantity){
-  this.itemQuantity = [];
-  this.itemList = [];
+constructor(i,q){
+  this.itemQuantity = q;
+  this.itemList = i;
 }
   //Type the instance functions below this comment.
 addItem(){
-let q = itemQuantity.push();
-let i = itemList.push();
+let q = this.itemQuantity.push();
+let i = this.itemList.push();
 }
 totalCart(){
   let total = 0;
@@ -17,7 +17,7 @@ totalCart(){
 return total;
 }
 subCart(days){
-    let subCart = new Cart();
+    let subCart = new Cart([],[]);
       for(var c=0; c < this.itemList[].length;c++)
         if(this.itemList[c].shipping == days){
           subCart.itemList.push(this.itemList[c]);
